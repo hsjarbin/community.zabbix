@@ -428,6 +428,7 @@ and in the playbook only specifying:
 ## Example for TLS PSK encrypted agent communication
 
 Variables e.g. in the playbook or in `host_vars/myhost`:
+Abip: psk coming from openssl rand -hex 42 > /etc/zabbix/zabbix_agent_pskfile.psk
 
 ```yaml
     zabbix_agent_tlsaccept: psk
